@@ -1,0 +1,53 @@
+
+**** Build of configuration Debug for project tirtos_lab1_cc2650launchxl ****
+
+"D:\\CCS7.0\\ccsv7\\utils\\bin\\gmake" -j -k -j 4 all -O 
+'Building file: ../flash_debug.cfg'
+'Invoking: XDCtools'
+"C:/ti/xdctools_3_32_00_06_core/xs" --xdcpath="C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/packages;C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/tidrivers_cc13xx_cc26xx_2_20_01_10/packages;C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages;C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/uia_2_00_06_52/packages;D:/CCS7.0/ccsv7/ccs_base;" xdc.tools.configuro -o configPkg -t ti.targets.arm.elf.M3 -p ti.platforms.simplelink:CC2650F128 -r release -c "D:/CCS7.0/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS" --compileOptions "-mv7M3 --code_state=16 -me --include_path=\"C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393\" --include_path=\"C:/Users/csxwin/workspace_v7/tirtos_lab1_cc2650launchxl\" --include_path=\"D:/CCS7.0/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include\" --define=CC26XXWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi  " "../flash_debug.cfg"
+making package.mak (because of package.bld) ...
+generating interfaces for package configPkg (because package/package.xdc.inc is older than package.xdc) ...
+configuring flash_debug.xem3 from package/cfg/flash_debug_pem3.cfg ...
+generating custom ti.sysbios library makefile ... 
+Starting build of library sources ...
+making C:/Users/csxwin/workspace_v7/tirtos_lab1_cc2650launchxl/src/sysbios/sysbios.aem3 ...
+gmake[1]: Entering directory `C:/Users/csxwin/workspace_v7/tirtos_lab1_cc2650launchxl/src/sysbios'
+clem3 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/BIOS.c ...
+asmem3 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi_asm.sv7M ...
+asmem3 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/Hwi_asm_switch.sv7M ...
+asmem3 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/IntrinsicsSupport_asm.sv7M ...
+asmem3 C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/bios_6_46_01_38/packages/ti/sysbios/family/arm/m3/TaskSupport_asm.sv7M ...
+arem3 BIOS.obj m3_Hwi_asm.obj m3_Hwi_asm_switch.obj m3_IntrinsicsSupport_asm.obj m3_TaskSupport_asm.obj ...
+gmake[1]: Leaving directory `C:/Users/csxwin/workspace_v7/tirtos_lab1_cc2650launchxl/src/sysbios'
+Build of libraries done.
+clem3 package/cfg/flash_debug_pem3.c ...
+'Finished building: ../flash_debug.cfg'
+' '
+        1 file(s) copied.
+making ../src/sysbios/sysbios.aem3 ...
+gmake[1]: Nothing to be done for 'all'.
+'Building file: ../ccfg.c'
+'Invoking: ARM Compiler'
+"D:/CCS7.0/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/bin/armcl" -mv7M3 --code_state=16 -me --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393" --include_path="C:/Users/csxwin/workspace_v7/tirtos_lab1_cc2650launchxl" --include_path="D:/CCS7.0/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include" --define=CC26XXWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="ccfg.d" --cmd_file="configPkg/compiler.opt" "../ccfg.c"
+'Finished building: ../ccfg.c'
+' '
+'Building file: ../lab1-main.c'
+'Invoking: ARM Compiler'
+"D:/CCS7.0/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/bin/armcl" -mv7M3 --code_state=16 -me --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393" --include_path="C:/Users/csxwin/workspace_v7/tirtos_lab1_cc2650launchxl" --include_path="D:/CCS7.0/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include" --define=CC26XXWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="lab1-main.d" --cmd_file="configPkg/compiler.opt" "../lab1-main.c"
+'Finished building: ../lab1-main.c'
+' '
+'Building file: ../CC2650_LAUNCHXL.c'
+'Invoking: ARM Compiler'
+"D:/CCS7.0/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/bin/armcl" -mv7M3 --code_state=16 -me --include_path="C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393" --include_path="C:/Users/csxwin/workspace_v7/tirtos_lab1_cc2650launchxl" --include_path="D:/CCS7.0/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include" --define=CC26XXWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi --preproc_with_compile --preproc_dependency="CC2650_LAUNCHXL.d" --cmd_file="configPkg/compiler.opt" "../CC2650_LAUNCHXL.c"
+'Finished building: ../CC2650_LAUNCHXL.c'
+' '
+making ../src/sysbios/sysbios.aem3 ...
+gmake[2]: Nothing to be done for 'all'.
+'Building target: tirtos_lab1_cc2650launchxl.out'
+'Invoking: ARM Linker'
+"D:/CCS7.0/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/bin/armcl" -mv7M3 --code_state=16 -me --define=CC26XXWARE -g --gcc --diag_warning=225 --diag_warning=255 --diag_wrap=off --display_error_number --gen_func_subsections=on --abi=eabi -z -m"tirtos_lab1_cc2650launchxl.map" --heap_size=0 --stack_size=256 -i"D:/CCS7.0/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/lib" -i"D:/CCS7.0/ccsv7/tools/compiler/ti-cgt-arm_16.9.0.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="tirtos_lab1_cc2650launchxl_linkInfo.xml" --rom_model -o "tirtos_lab1_cc2650launchxl.out" "./CC2650_LAUNCHXL.obj" "./ccfg.obj" "./lab1-main.obj" "../cc26x0f128.cmd" -l"configPkg/linker.cmd" -l"C:/ti/tirtos_cc13xx_cc26xx_2_20_01_08/products/cc26xxware_2_24_02_17393/driverlib/bin/ccs/driverlib.lib" -llibc.a 
+<Linking>
+'Finished building target: tirtos_lab1_cc2650launchxl.out'
+' '
+
+**** Build Finished ****
